@@ -1,0 +1,47 @@
+# Exercise4
+"""
+This is a program in which you have to input two numbers 1 and 0. If you choose 1, the order will be ascending.
+If you choose 0, the order will be descending. Then you have to choose the number of rows you have to print the stars.
+In the case of descending order, the number of rows you choose will be equivalent to the number of stars in the first
+row. In the case of ascending order, the number of rows you choose will be equivalent to the number of stars in the last
+row.
+"""
+print("Hello guys!")
+order = int(input("Enter the order(1 or 0):"))
+if order == 1:
+    a = bool(order > 0)
+    if a == False:
+        b = "Descending order"
+        print(b)
+    if a == True:
+        b = "Ascending order"
+        print(b)
+if order == 0:
+    a = bool(order > 0)
+    if a == False:
+        b = "Descending order"
+        print(b)
+    if a == True:
+        b = "Ascending order"
+        print(b)
+if a == False:
+    t = int(input("Enter the number of rows:"))
+    print('*' * t)
+    while True:
+        if t != 0:
+            t = t - 1
+            print('*' * t)
+            continue
+        if t == 0:
+            break
+if a == True:
+    t = int(input("Enter the number of rows you want:"))
+    start = 1
+    print('*' * start)
+    while True:
+        if start != t:
+            start = start + 1
+            print('*' * start)
+            continue
+        if start == t:
+            break
