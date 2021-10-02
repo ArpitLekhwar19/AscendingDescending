@@ -5,4 +5,4 @@ A python program where you have to choose between 1 and 0 for ascending and desc
 main
 # It is Working.
 # I have checked it.
-# A fun game
+# A fun game indeed.
